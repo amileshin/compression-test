@@ -1,0 +1,8 @@
+.vscode
+lib
+
+*.log
+*.csv
+*.txt
+
+compression_test
