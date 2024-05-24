@@ -2,6 +2,7 @@
 .build
 
 *.log
+!test.log
 *.csv
 *.txt
 
