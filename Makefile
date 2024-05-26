@@ -1,6 +1,8 @@
 #Compiler
 CPP = g++
 
+CFLAGS = -std=c++17
+
 #Files
 FILE_NAME = compression_test.cpp
 #Output object
@@ -56,7 +58,7 @@ LZ4_FILES += lz4/lz4.c
 LIBS = $(ZSTD_LIB) $(LZ4_LIB)
 
 make: $(FILE_NAME)
-	$(CPP) $(LIBS) $(LZ4_FILES) $(ZSTD_FILES) $(FILE_NAME) -o $(OBJ_NAME)
+	$(CPP) $(CFLAGS) $(LIBS) $(LZ4_FILES) $(ZSTD_FILES) $(FILE_NAME) -o $(OBJ_NAME)
 
 clean: clean_build
 	rm $(OBJ_NAME)
